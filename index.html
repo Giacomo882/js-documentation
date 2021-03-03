@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+
+#navbar a:hover{
+    background-color: #4d4e53;
+    color: rgb(255, 255, 255);
+} 
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+}
+      
+  @media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
+</style> 
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="navbar"><header>JS Documentation</header></li>
+            <li class="navbar"><a id="active" href="#What_is_JavaScript?" class="nav-link">What is JavaScript?</a> </li>
+            <li class="navbar"><a href="#JavaScript_and_Java" class="nav-link"> JavaScript and Java</a> </li>
+            <li class="navbar"><a href="#A_Hello_world!_example" class="nav-link">A <em>Hello world!</em> example</a> </li>
+            <li class="navbar"><a href="#Variables" class="nav-link">Variables</a> </li>
+            <li class="navbar"><a href="#Functions" class="nav-link">Functions</a> </li>
+            <li class="navbar"><a href="#Reference" class="nav-link">Reference</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="What_is_JavaScript?">
+            <header> What is JavaScript?</header>
+            <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
+            <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java"> 
+            <header>JavaScript and Java</header>
+            <p>Both Java and JavaScript are written, assembled and executed differently, and each has dramatic differences when it comes to what it is capable of doing.</p>
+            <p>Java is used in a wide range of places, including Android apps, credit card programming and in the creation of desktop applications and web enterprise applications. By comparison, JavaScript is mainly used to make web pages more interactive. It can be used as an alternative to Flash, though most programmers will tell you that JavaScript is more popular and has more functionality than Flash. JavaScript can be used to do neat things like creating animation in HTML.</p>
+            <ul>
+                <li>Java code must be compiled, and JavaScript code is all-text.
+                </li>
+                <li>Each language requires different plug-ins.
+                </li>
+                <li>JavaScript code is run on a browser only, while Java creates applications that run in a virtual machine or browser.
+                </li>
+                <li>Java is an OOP (object-oriented programming) language, and JavaScript is specifically an OOP scripting language.
+                </li>
+
+            </ul>
+            <p>A new student of programming will learn that both Java and JavaScript are worthwhile languages to add to their coding repertoire. In fact, many programmers and developers say that learning these two languages early on, back to back, is a very wise move for a new programmer. Without a doubt, having Java and JavaScript under one’s belt will make a programmer more employable and will lead to more lucrative job opportunities down the road.</p>
+        </section>
+
+        <section class="main-section" id="A_Hello_world!_example">
+            <header> A <em>Hello world!</em> example</header>
+            <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.            </p>
+            <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a <em>Hello world!</em> example. (<em>Hello world!</em> is the standard for introductory programming examples.)</p>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable: </p>
+            <p>Before 2015, using the <code>var</code> keyword was the only way to declare a JavaScript variable.</p>
+            <code class="string">var x = 5;
+                var y = 6;
+                var z = x + y;</code>
+            <p>The 2015 version of JavaScript (ES6) allows the use of the <code>const</code> keyword to define a variable that cannot be reassigned, and the <code>let</code> keyword to define a variable with restricted scope.</p>
+            <p>Because it is a little complicated to describe the difference between these keywords, and because they are not supported in older browsers, the first part of this tutorial will most often use <code>var</code>.</p>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. </p>
+            <p>A JavaScript function is defined with the <code>function</code> keyword, followed by a <strong>name</strong>, followed by parentheses <strong>()</strong>.</p>
+            <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+            <code class="string">function myFunction(p1, p2) {
+                return p1 * p2;   // The function returns the product of p1 and p2
+              }</code>
+            <p>The parentheses may include parameter names separated by commas:
+                <strong>(parameter1, parameter2, ...)</strong></p>
+            <p>The code to be executed, by the function, is placed inside curly brackets: <strong>{}</strong></p>
+            <code class="string">function name(parameter1, parameter2, parameter3) {
+                // code to be executed
+              }</code>
+        </section>
+
+        <section class="main-section" id="Reference"> 
+            <header>Reference</header>
+            <ul>
+                <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN</a> and <a href="https://www.w3schools.com/">W3Schools</a>.</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
