@@ -1,2 +1,2 @@
 Hello! This is a JS intro Documentation.
-You can watch it in this link!
+[Link to my JavaScript Documentation!](https://giacomo882.github.io/js-documentation/)
